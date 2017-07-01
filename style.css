@@ -1,0 +1,115 @@
+/*
+Theme Name: WebDevPro
+Description: A Child Theme developed by WebDevPro: Ramon Horst http://webdevpro.nl
+Template: twentyseventeen
+*/
+@import url(../twentyseventeen/style.css);
+
+
+body {
+background-color: #000;
+opacity: 1;
+margin: 0;
+}
+
+/*Header media when admin bar is not visible*/
+.twentyseventeen-front-page.has-header-image .custom-header-media,
+.twentyseventeen-front-page.has-header-video .custom-header-media,
+.home.blog.has-header-image .custom-header-media,
+.home.blog.has-header-video .custom-header-media {
+  height: 1200px;
+  height: 100vh;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+/*Header media when admin bar is visible*/
+.admin-bar.twentyseventeen-front-page.has-header-image .custom-header-media,
+.admin-bar.twentyseventeen-front-page.has-header-video .custom-header-media,
+.admin-bar.home.blog.has-header-image .custom-header-media,
+.admin-bar.home.blog.has-header-video .custom-header-media {
+  height: calc(100vh - 32px);
+}
+
+/*Header media on smaller screens (e.g. mobile and tablet)*/
+.has-header-image.twentyseventeen-front-page .custom-header,
+.has-header-video.twentyseventeen-front-page .custom-header,
+.has-header-image.home.blog .custom-header,
+.has-header-video.home.blog .custom-header {
+        display: table;
+        height: 300px;
+        height: 75vh;
+        width: 100%;
+}
+
+/*The viewport wide bar containing the header text and sub text*/
+.site-branding {
+  background: #CC0000; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(left, #CC0000 , #FFF); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(right, #CC0000, #FFF); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(right, #CC0000, #FFF); /* For Firefox 3.6 to 15 */
+background: linear-gradient(to right, #CC0000 , #FFF); /* Standard syntax */
+}
+
+
+.site-description {
+  color: #FFF;
+}
+
+.site-content-contain {
+  margin-top: 25px;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.site-title {
+  text-shadow: 2px 2px #CC0000;
+}
+
+.woocommerce-Price-amount h2,a {
+  color: #FFF;
+}
+
+.woocommerce-products-header {
+  visibility: hidden;
+}
+
+.count {
+  visibility: hidden;
+}
+
+.woocommerce-Price-amount a:hover {
+  color: ##CC0000;
+}
+
+.woocommerce-Price-amount  {
+  color: #FFF;
+}
+
+ul.products li.product .button:hover {
+  color: #CC0000;
+  font-weight: bold;
+}
+
+.site-info {
+  color: #FFF;
+}
+
+.site-info a {
+  color: #CC0000;
+  text-decoration: none;
+}
+
+.woocommerce-cart-tab-container .widget_shopping_cart {
+  background-color: #000;
+}
+
+.woocommerce-cart-tab-container .widget_shopping_cart .buttons .button:nth-child(2) {
+  color: #000;
+}
+
+
+.woocommerce-message {
+  background-color: #CC0000;
+  border-radius: 50px;
+}
