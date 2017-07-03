@@ -1,0 +1,10 @@
+/*
+Theme Name: WebDevPro
+Description: A Child Theme developed by WebDevPro: Ramon Horst http://webdevpro.nl
+Template: twentyseventeen
+*/
+@import url(../azera-shop/style.css);
+
+.count {
+  visibility: hidden;
+}
